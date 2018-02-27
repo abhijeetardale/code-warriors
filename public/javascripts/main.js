@@ -22,5 +22,12 @@ $(document).ready(function(){
 
   }
 
+  if ( $( "#katta" ).length ) {
+
+       $('nav a').removeClass("current-page-item");
+       $('#kattaLink').addClass("current-page-item");
+
+  }
+
 });
 

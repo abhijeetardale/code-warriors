@@ -39,6 +39,10 @@ class HomeController @Inject() (ws: WSClient, userRepository: UserRepository)(im
     val userName = request.session.get("username").getOrElse("")
     Ok(views.html.home(userName))
   }
+  def katta = Action { implicit request =>
+    val userName = request.session.get("username").getOrElse("")
+    Ok(views.html.katta(userName))
+  }
   def profile = Action { implicit request =>
     val userName = request.session.get("username").getOrElse("")
     Ok(views.html.profile(userName))
