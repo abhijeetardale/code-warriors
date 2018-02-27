@@ -50,7 +50,7 @@ class LoginController @Inject() (ws: WSClient)(implicit val messagesApi: Message
 
         }else {
 
-          Redirect("/home")
+          Redirect("/home").withSession("username"->successSub.userName)
         }
       }
     )
