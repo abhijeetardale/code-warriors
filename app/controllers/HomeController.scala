@@ -35,8 +35,14 @@ import scala.util.{Failure, Success, Try}
 class HomeController @Inject() (ws: WSClient)(implicit val messagesApi: MessagesApi, context: ExecutionContext) extends Controller with i18n.I18nSupport {
 
 
-  def index = Action { implicit request =>
-    Ok(views.html.index())
+  def home = Action { implicit request =>
+    Ok(views.html.home())
+  }
+  def profile = Action { implicit request =>
+    Ok(views.html.profile())
+  }
+  def league = Action { implicit request =>
+    Ok(views.html.league())
   }
 }
 
