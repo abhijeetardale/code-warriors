@@ -32,16 +32,11 @@ import scala.util.{Failure, Success, Try}
 
 
 @Singleton
-class HomeController @Inject() (ws: WSClient)(implicit val messagesApi: MessagesApi, context: ExecutionContext) extends Controller with i18n.I18nSupport {
+class LeagueController @Inject() (ws: WSClient)(implicit val messagesApi: MessagesApi, context: ExecutionContext) extends Controller with i18n.I18nSupport {
 
-  def home = Action { implicit request =>
-    Ok(views.html.home())
-  }
-  def profile = Action { implicit request =>
-    Ok(views.html.profile())
-  }
-  def league = Action { implicit request =>
-    Ok(views.html.league())
+
+  def showLeagues = Action { implicit request =>
+    Ok("Leagues to go here")
   }
 }
 

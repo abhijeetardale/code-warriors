@@ -2,9 +2,12 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-GET     /home                           controllers.HomeController.home
-GET     /league                         controllers.HomeController.league
-GET     /profile                        controllers.HomeController.profile
+GET     /login                         controllers.LoginController.presentLogin
+POST    /login-submit                  controllers.LoginController.submitLogin
+GET     /home                          controllers.HomeController.home
+GET     /profile                       controllers.HomeController.profile
+GET     /league                        controllers.HomeController.league
+GET     /leagues                       controllers.LeagueController.showLeagues
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
