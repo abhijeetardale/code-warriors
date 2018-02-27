@@ -6,7 +6,8 @@ GET     /login                         controllers.LoginController.presentLogin
 POST    /login-submit                  controllers.LoginController.submitLogin
 GET     /home                          controllers.HomeController.home
 GET     /profile                       controllers.HomeController.profile
-GET     /katta                       controllers.HomeController.katta
+GET     /katta                         controllers.HomeController.katta
+GET     /old-kattas                     controllers.HomeController.oldKattas
 GET     /league                        controllers.HomeController.league
 GET     /leagues                       controllers.LeagueController.showLeagues
 

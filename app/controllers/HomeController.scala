@@ -51,6 +51,10 @@ class HomeController @Inject() (ws: WSClient, userRepository: UserRepository)(im
     val userName = request.session.get("username").getOrElse("")
     Ok(views.html.league(userName))
   }
+  def oldKattas = Action { implicit request =>
+    val userName = request.session.get("username").getOrElse("")
+    Ok(views.html.oldKattas(userName))
+  }
 }
 
 

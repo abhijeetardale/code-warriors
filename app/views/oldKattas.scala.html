@@ -1,0 +1,50 @@
+@(userName: String)(implicit messages: Messages)
+
+@main("League Details") {
+<div class="container" id="katta">
+    <div class="row main-row">
+        <div class="8u 12u(mobile)">
+
+            <section class="left-content">
+                <h2>Old Katta</h2>
+
+                <div class="tablerow">
+                    <div class="col-2 col-header">Rank</div>
+                    <div class="col-8 col-header">Name </div>
+                    <div class="col-2 col-header">Reponse received</div>
+                </div>
+                <div class="tablerow">
+                    <div class="col-2">1</div>
+                    <div class="col-8">
+                        <a href="#"><img src='@routes.Assets.versioned("images/vending-machine.jpg")' alt="" class="left" /></a>
+                        <h4>Vending Machine</h4>
+                        <p>The goal of this kata is to model a vending machine</br> and the state it must maintain during it’s operation.</p>
+                    </div>
+                    <div class="col-2">10</div>
+                </div>
+                <div class="tablerow">
+                    <div class="col-2">2</div>
+                    <div class="col-8">
+                        <ul class="small-image-list">
+                        <li>
+                        <a href="#"><img src='@routes.Assets.versioned("images/roman-numeral.jpg")' alt="" class="left" /></a>
+                        <h4>Roman numerals</h4>
+                        <p>The goal of this kata is to convert numbers to roman numerals.</p>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="col-2">20</div>
+                </div>
+            </section>
+
+        </div>
+        <div class="4u 12u(mobile)">
+
+
+
+
+
+        </div>
+    </div>
+</div>
+}
